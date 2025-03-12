@@ -60,12 +60,14 @@ class Program
             else if (userAction == 2)
             {
                 Console.Clear();
-                foreach (Entry item in _entries)
-                {
-                    Console.WriteLine($"Date: {item._date} - Prompt: {item._prompt}");
-                    Console.WriteLine($"Feeling at time of writing: {item._feeling}");
-                    Console.WriteLine($"{item._response}\n");
-                }
+                // foreach (Entry item in _entries)
+                // {
+                //     Console.WriteLine($"Date: {item._date} - Prompt: {item._prompt}");
+                //     Console.WriteLine($"Feeling at time of writing: {item._feeling}");
+                //     Console.WriteLine($"{item._response}\n");
+                // }
+                Entry displayEntry = new Entry();
+                displayEntry.Display(_entries);
             }
             else if (userAction == 3)
             {
@@ -86,10 +88,9 @@ class Program
                     loadedEntry._response = parts[2];
                     loadedEntry._feeling = parts[3];
                     _entries.Add(loadedEntry);
-                    Console.WriteLine($"Date: {loadedEntry._date} - Prompt: {loadedEntry._prompt}");
-                    Console.WriteLine($"Feeling at time of writing: {loadedEntry._feeling}");
-                    Console.WriteLine($"{loadedEntry._response}\n");
                 }
+                Entry displayEntry = new Entry();
+                displayEntry.Display(_entries);
             }
             else if (userAction == 4)
             {
