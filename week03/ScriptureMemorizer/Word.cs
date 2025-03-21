@@ -14,12 +14,7 @@ public class Word
     public void Hide()
     {
         _isHidden = true;
-        string hiddenText = "";
-        for (int i = 0; i < _text.Length; i++)
-        {
-            hiddenText += "_";
-        }
-        _text = hiddenText;
+        _text = new string('_', _text.Length);
     }
     public void Show()
     {
