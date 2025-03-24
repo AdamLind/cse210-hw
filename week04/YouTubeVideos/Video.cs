@@ -29,10 +29,14 @@ public class Video
     public void DisplayContent()
     {
         Console.WriteLine($"{_title}, {_author}, Length: {_length} seconds");
+        DisplayNumberOfComments();
         foreach (Comment a in _comments)
         {
             Console.WriteLine($"{a.GetCommenter()}: {a.GetContent()}");
         }
     }
-
+    public void DisplayNumberOfComments()
+    {
+        Console.WriteLine($"Number of comments: {_comments.Count}");
+    }
 }
