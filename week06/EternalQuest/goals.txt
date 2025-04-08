@@ -1,0 +1,6 @@
+307173
+SimpleGoal:Go to bed early~In bed before 9pm~50~True
+EternalGoal:Go to the temple~Do an ordinance~500
+ChecklistGoal:Do something outside~Do something outside this week~123~234~5~1
+ChecklistGoal:Eat cellery~Vegetables are good for you~300~300000~5~5
+SimpleGoal:Make dinner~Make dinner for Anna so she won't have to~500~False
